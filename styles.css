@@ -5,6 +5,19 @@
     scroll-behavior:smooth;
   }
 
+  :root {
+    --gray-00: #ffffff;
+    --main-font: antiquewhite;
+    --gray-15: #d0d0d5;
+    --background:  #321325;
+    --gray-85: #1b1b32;
+    --input-background: #0a0a23;
+    --blue-50: #198eee;
+    --error: #a94442;
+    --danger-color: #850000;
+    --danger-background: #ffadad;
+  }
+
     body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/6220444/pexels-photo-6220444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -14,8 +27,8 @@
   }
 
     main#container {
-    width: 500px;
-    min-height: 670px;
+    width: 600px;
+    min-height: 590px;
     position: relative;
     top: 50px;
     margin: 0 auto;
@@ -39,4 +52,64 @@
     border-style: solid none;
     letter-spacing: 1px;
     text-shadow: 4px 4px #000;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 350px;
+    font-family: Baskerville, 'Castoro Titling';
+    color: var(--main-font);
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  form {
+    color: var(--main-font);
+    margin: auto 25px;
+    padding: 20px 40px;
+    border: 2px solid var(--main-font);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--background);
+  }
+
+  label {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input#number {
+    display: block;
+    font-size: 40px;
+    width: 100%;
+    height: 60px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    line-height: 1.4;
+    color: white;
+    background-color: var(--input-background);
+    border: 1px solid var(--main-font);
+    border-radius: 10px;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  button {
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-image: linear-gradient(#F3FFB9, #ffac33);
+    border: 3px solid #feac32;
+    padding: 10px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
   }
