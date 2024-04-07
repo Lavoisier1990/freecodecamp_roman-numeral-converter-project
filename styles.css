@@ -114,6 +114,16 @@
     border-radius: 10px;
   }
 
-  class.hidden {
+  div.hidden {
     display: none;
+  }
+
+  div.neg-output {
+    background-color: #ffcccc;
+    min-height: 50px;
+    padding: 20px;
+    color: #800000;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
   }
