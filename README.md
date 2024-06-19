@@ -17,3 +17,4 @@ This is an adaptation of a short project with the FreeCodeCamp JavaScript Algori
 
 **Image credits**
 Photo by Tom D'Arby from Pexels: https://www.pexels.com/photo/ancient-roman-architecture-6220444/
+Image by <a href="https://pixabay.com/users/darkmoon_art-1664300/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3561710">Dorothe</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3561710">Pixabay</a>
