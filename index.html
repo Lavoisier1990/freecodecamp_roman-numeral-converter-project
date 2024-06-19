@@ -18,14 +18,16 @@
                 <fieldset>
                     <label for="number">Enter a Number:</label>
                     <br>
-                    <input type="number" id="number" required>
+                    <input type="number" id="number">
                     <br>
                     <button type="button" id="convert-btn" onclick="romanConverter()">Convert</button>
+                    <button class="hidden" id="reset-btn" onclick="myReset()">Reset</button>
                 </fieldset>
 
                 <fieldset>
-                    <div id="output" class="hidden output"></div>
-                    <p id="comment" class="hidden comment"></p>
+                    <div id="output" class="hidden"></div>
+                    <br>
+                    <p id="comment" class="hidden"></p>
                 </fieldset>
             </form>
         </section>
