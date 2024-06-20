@@ -8,30 +8,25 @@ function romanConverter(){
     convertBtn.classList.add("hidden");
     resetBtn.classList.add("reset-button");
     resetBtn.classList.remove("hidden");
+    outputDiv.classList.remove("hidden");
 
     if(Number.isInteger(Number(inputNumber.value)) === false){
-        outputDiv.classList.remove("hidden");
         outputDiv.innerText = "Please enter a valid integer";
     }else if(inputNumber.value === ""){
-        outputDiv.classList.remove("hidden");
         outputDiv.innerText = "Please enter a valid number";
     }else if(parseInt(inputNumber.value) === 0){
-        outputDiv.classList.remove("hidden");
         outputDiv.classList.add("output");
         outputDiv.innerText = "NULLA";
         commentParagraph.classList.remove("hidden");
         commentParagraph.innerText = "The Roman numeral system does not have an equivalent for zero(0), however, the word NULLA (the Latin word meaning 'none' or 'nothing') was used to represent what we call the number zero.";
     }else if(parseInt(inputNumber.value) < 0){
-        outputDiv.classList.remove("hidden");
         outputDiv.innerText = "Please enter a number greater than or equal to 1";
         commentParagraph.classList.remove("hidden");
         commentParagraph.innerText = "The Roman numeral system does not have a representation for negative numbers.";
     }else if(parseInt(inputNumber.value) > 0 && parseInt(inputNumber.value) < 4000) {
-        outputDiv.classList.remove("hidden");
         outputDiv.classList.add("output");
         outputDiv.innerText = convertToRoman(parseInt(inputNumber.value));
     }else if(parseInt(inputNumber.value) >= 4000){
-        outputDiv.classList.remove("hidden");
         outputDiv.innerText = "Please enter a number less than or equal to 3999";
     }
 }
