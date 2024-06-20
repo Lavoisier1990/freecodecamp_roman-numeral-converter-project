@@ -65,10 +65,3 @@ function myReset(){
     resetBtn.classList.add("hidden");
     resetBtn.classList.remove("reset-button");
 };
-
-/*resetBtn.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      event.preventDefault();
-      resetBtn.click();
-    }
-  });*/
