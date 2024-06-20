@@ -55,5 +55,4 @@ function myReset(){
     convertBtn.classList.remove("hidden");
     resetBtn.classList.add("hidden");
     resetBtn.classList.remove("reset-button");
-    location.reload();
 }
