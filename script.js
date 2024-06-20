@@ -9,6 +9,7 @@ function romanConverter(){
     resetBtn.classList.add("reset-button");
     resetBtn.classList.remove("hidden");
     outputDiv.classList.remove("hidden");
+    inputNumber.blur();
 
     if(Number.isInteger(Number(inputNumber.value)) === false){
         outputDiv.innerText = "Please enter a valid integer";
@@ -46,6 +47,14 @@ function convertToRoman(inputNumber){
 return romanResult;
 };
 
+inputNumber.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      convertBtn.click();
+      resetBtn.focus();
+    }
+  });
+
 function myReset(){
     outputDiv.classList.add("hidden");
     outputDiv.innerText = "";
@@ -55,4 +64,11 @@ function myReset(){
     convertBtn.classList.remove("hidden");
     resetBtn.classList.add("hidden");
     resetBtn.classList.remove("reset-button");
-}
+};
+
+/*resetBtn.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      resetBtn.click();
+    }
+  });*/
