@@ -25,8 +25,13 @@ function romanConverter(){
         commentParagraph.classList.remove("hidden");
         commentParagraph.innerText = "The Roman numeral system does not have a representation for negative numbers.";
     }else if(parseInt(inputNumber.value) > 0 && parseInt(inputNumber.value) < 4000) {
+        const regex =/[a-zA-Z]/g;
         outputDiv.classList.add("output");
         outputDiv.innerText = convertToRoman(parseInt(inputNumber.value));
+        if(convertToRoman(parseInt(inputNumber.value)).match(regex).length >= 15){
+            outputDiv.style.fontSize = "170%";
+            outputDiv.style.padding = "8px 12px";
+        }
     }else if(parseInt(inputNumber.value) >= 4000){
         outputDiv.innerText = "Please enter a number less than or equal to 3999";
     }
